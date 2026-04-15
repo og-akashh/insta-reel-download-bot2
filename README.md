@@ -27,7 +27,7 @@ Click the button above, then:
 
 ### Manual Deploy
 
-1. Fork this repository.
+1. Star and Fork this repository.
 2. On [Render](https://render.com), create a **New Web Service**.
 3. Connect your repo – Render will auto‑detect the `Dockerfile`.
 4. Add the following environment variables:

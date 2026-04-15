@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: telegram-media-bot
+    runtime: image
+    repo: https://github.com/YOUR_USERNAME/telegram-media-bot
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: REQUIRED_CHANNELS
+        value: "-100123456789,https://t.me/joinchat/abc; -100987654321,https://t.me/joinchat/xyz"
+      - key: OWNER_LINK
+        value: "https://t.me/yourusername"
+      - key: SUPPORT_CHANNEL_LINK
+        value: "https://t.me/support"
+      - key: DELETE_AFTER_MINUTES
+        value: 20
+      - key: MAX_FILE_SIZE_MB
+        value: 50
+      - key: LOG_LEVEL
+        value: INFO

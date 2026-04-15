@@ -1,0 +1,9 @@
+.env
+.git
+.gitignore
+__pycache__
+*.pyc
+downloads/
+*.log
+README.md
+.dockerignore
